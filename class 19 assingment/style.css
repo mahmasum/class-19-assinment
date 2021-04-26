@@ -1,0 +1,151 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.maindiv{
+    width: 1024px;
+    margin: auto;
+    font-family: sans-serif;
+    text-align: center;
+}
+.menu{
+    margin-bottom: 5px;
+}
+.menu li{
+    display: inline-block;
+    transition: .5s;
+    background-color: #48dbfb;;
+    padding: 20px 25px;
+
+}
+.menu li:hover{
+    background-color: white;
+}
+.menu li:hover a{
+    color: #48dbfb;
+}
+.menu li a{
+    text-decoration: none;
+    display: block; 
+    color: black;
+    transition: .5s;
+    position: relative
+}
+.menu li a::before{
+    content: '';
+    width: 0;
+    height: 2px;
+    left: 0;
+    bottom: -2px;
+    position: absolute;
+    transition: .5s;
+    position: absolute;
+    background-color: black;
+}
+.menu li:hover a::before{
+    width: 100%;
+}
+.baner{
+    background: #48dbfb;
+    padding: 100px 30px;
+    color: white;
+}
+.baner p{
+    margin-bottom: 20px;
+}
+.baner h1{
+    margin-bottom: 10px;
+}
+button{
+    background: white;
+    color: rgb(0, 0, 0,.1);
+    border: none;
+    padding: 15px 20px;
+    border-radius: 5px;
+    font-size: 20px;
+    position: relative;
+    z-index: 1;
+    transition: .4s;
+
+}
+button:hover{
+    color: white;
+}
+button::before{
+    content: "";
+    width: 0;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: black;
+    position: absolute;
+    z-index: -1;
+    transition: .4s;
+}
+button:hover::before{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.container{
+    padding: 70px 30px;
+    position: relative;
+}
+.container h1{
+    margin-bottom: 10px;
+}
+.container p{
+    margin-bottom: 30px;
+}
+.d1{
+    height: 45px;
+    width: 90px;
+    background-color: black;
+    color: white;
+    padding-top: 15px;
+    display: inline-block;
+    position: absolute;
+    top:  240px;
+    left: 128px;
+    transform: rotate(-53deg);
+}
+.d2{
+    height: 45px;
+    width: 90px;
+    background-color: black;
+    color: white;
+    padding-top: 15px;
+    display: inline-block;
+    position: absolute;
+    top: 256px;
+    left: 435px;
+}
+.d3{
+    height: 45px;
+    width: 90px;
+    background-color: black;
+    color: white;
+    padding-top: 15px;
+    display: inline-block;
+    position: absolute;
+    top: 240px;
+    left: 780px;
+    transform: rotate(50deg);
+}
+.dh{
+    transition: .4s;
+}
+.dh:hover{
+    background-color: #9cdcfe;
+    transform: scale(1.2);
+    cursor: pointer;
+}
+.foter{
+    background-color: #2e2f31;
+    padding: 25px;
+    color: white;
+}
